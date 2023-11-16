@@ -1,0 +1,13 @@
+name: Test
+
+on:
+  push:
+    branches: [main, master]
+
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    name: Foo
+
+    steps:
+    - run: uname -a
